@@ -33,7 +33,7 @@ Rate limiter limits the number of client requests allowed to be sent over a spec
 1. Implementation
    1. Modules:
       1. Configuration: Rate limiter middleware needs rate limiting rules config.
-      2. Work Flow
+      2. Composition
          1. A worker constantly fetch updated limiting rules from disks to cache.
          2. When a request arrives, the middleware fetches the rule from cache and the latest count/timestamps from Redis.
             1. If passed the rule, the request is routed to the server.
