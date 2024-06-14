@@ -1,9 +1,5 @@
 # Rate Limiter
 
-## Category
-
-Small Service
-
 ## Definition
 
 Rate limiter limits the number of client requests allowed to be sent over a specific period.
