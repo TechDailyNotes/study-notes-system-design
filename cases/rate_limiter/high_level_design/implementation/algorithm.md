@@ -50,4 +50,31 @@
 
 ## Sliding Window Log
 
+1. Description: A queue (or sorted set) storing timestamps.
+2. Work Flow
+   1. When a request arrives, remove all the outdates timestamps.
+   2. Check if the number of requests exceeds the pre-defined rate limit.
+3. Parameters
+   1. Timestamps
+4. Return Values
+5. Miscellaneous
+6. Pros
+   1. This rate limiting is very accurate, because in any rolling window, the number of requests will not exceed the rate limit.
+7. Cons
+   1. Memory inefficient because timestamp logs will use additional memory.
+
 ## Sliding Window Counter
+
+1. Description: It divides a timeline into time windows.
+2. Work Flow
+   1. When a request arrives, it computes the percentage of overlaps between the current window and the preceding window.
+   2. Total number of requests is the sum of the current window's request number and the previous window's request number multiplied by the overlap percentage.
+3. Parameters
+4. Return Values
+5. Miscellaneous
+6. Pros
+   1. Memory efficient.
+   2. Smooth out spikes in traffic.
+   3. Work in most of the scenarios.
+7. Cons
+   1. Assume a even distribution in requests.
