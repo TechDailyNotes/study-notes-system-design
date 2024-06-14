@@ -41,5 +41,5 @@ Rate limiter limits the number of client requests allowed to be sent over a spec
                1. One option is to drop the request.
                2. One option is to store the request in a message queue.
 2. System
-
-## Wrap Up
+   1. Race Condition
+   2. Synchronization
