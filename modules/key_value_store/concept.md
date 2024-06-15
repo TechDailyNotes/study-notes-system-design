@@ -25,7 +25,7 @@
          2. Weak Consistency
          3. Eventual Consistency
       2. Performance
-         1. Higher consistency brings about higher latency
+         1. Higher consistency comes with higher latency
       3. Applications
          1. Dynamo, Cassandra, and normal key-value stores adopt eventual consistency
    5. Inconsistency Solution: Versioning
