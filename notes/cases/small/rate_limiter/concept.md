@@ -30,6 +30,3 @@ Rate limiter limits the number of client requests allowed to be sent over a spec
 
 1. Implementation
    1. [Modules](./detailed_design/implementation/modules.md)
-2. System
-   1. Race Condition
-   2. Synchronization
