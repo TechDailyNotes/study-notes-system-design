@@ -67,3 +67,11 @@
 ### Configuration
 
 ### Composition
+
+1. Write Path
+   1. Fetch write path from the on-disk commit log file
+   2. Write data to the in-memory cache
+   3. Flush cache data to the on-disk SSTable if the cache is full or reaches a certain threshold
+2. Read Path
+   1. Fetch read path from the in-memory cache
+   2. Fetch read path from the on-disk SSTable through the Bloom Filter if the cache does not contain the data
