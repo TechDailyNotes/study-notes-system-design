@@ -8,6 +8,8 @@
 
 ## Distributed Key-Value Store
 
+### Components
+
 1. Consistency
    1. Data Partitioning
       1. Method: Consistent Hashing (Hash Ring)
@@ -29,3 +31,12 @@
       3. Applications
          1. Dynamo, Cassandra, and normal key-value stores adopt eventual consistency
    5. Inconsistency Solution: Versioning
+      1. Features: Vector Clock
+      2. Representation: `[server: version]` pairs
+      3. Patterns
+         1. Ancestor-Descendant: If all the versions of data X is smaller than their correspondants of data Y, then we claim that X is the ancestor of Y.
+         2. Sibling: If data X has some versions larger than their correspondants of data Y, and data Y has some versions larger than that of data X, then we claim X and Y are siblings.
+
+### Configuration
+
+### Composition
