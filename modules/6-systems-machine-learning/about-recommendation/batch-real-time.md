@@ -1,7 +1,7 @@
 # Batch Training vs. Real-Time Training
 
-![Batch vs. Real-Time 1](./diagrams/batch_real_time_1.png)
-![Batch vs. Real-Time 2](./diagrams/batch_real_time_2.png)
+![Batch vs. Real-Time 1](./diagrams/batch-real-time-1.png)
+![Batch vs. Real-Time 2](./diagrams/batch-real-time-2.png)
 
 ## Batch Training
 

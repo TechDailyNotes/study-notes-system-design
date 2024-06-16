@@ -37,12 +37,12 @@
       3. Get candidates set through ANN i2i similarity map
       4. Get rank list from RSP
 
-![Alibaba Candidate Retrieval System](./diagrams/retrieval_alibaba.png)
+![Alibaba Candidate Retrieval System](./diagrams/retrieval-alibaba.png)
 
 ### Alibaba Graph Networks for Ranking
 
-![Alibaba Graph Networks for Ranking](./diagrams/rank_alibaba.png)
+![Alibaba Graph Networks for Ranking](./diagrams/rank-alibaba.png)
 
 ### Facebook Retrieval-Ranking System
 
-![Facebook Retrieval-Ranking System](./diagrams/retrieval_rank_facebook.png)
+![Facebook Retrieval-Ranking System](./diagrams/retrieval-rank-facebook.png)
