@@ -46,3 +46,15 @@
 ### Facebook Retrieval-Ranking System
 
 ![Facebook Retrieval-Ranking System](./diagrams/retrieval-rank-facebook.png)
+
+### Youtube Retrieval System
+
+![Youtube Retrieval System](./diagrams/retrieval-youtube.png)
+
+1. Input Embeddings
+   1. Embedded Videos Watched
+   2. Embedded Search Tokens
+2. Training Network
+   1. Classifier
+3. Inference Network
+   1. ANN Search (Approximate Nearest Neighbor)
