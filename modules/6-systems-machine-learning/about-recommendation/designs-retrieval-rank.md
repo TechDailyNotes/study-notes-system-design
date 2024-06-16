@@ -37,19 +37,19 @@
       3. Get candidates set through ANN i2i similarity map
       4. Get rank list from RSP
 
-![Alibaba Candidate Retrieval System](./diagrams/retrieval-alibaba.png)
+![Alibaba Candidate Retrieval System](./diagrams/designs-retrieval-co-alibaba.png)
 
 ### Alibaba Graph Networks for Ranking
 
-![Alibaba Graph Networks for Ranking](./diagrams/rank-alibaba.png)
+![Alibaba Graph Networks for Ranking](./diagrams/designs-rank-co-alibaba.png)
 
 ### Facebook Retrieval-Ranking System
 
-![Facebook Retrieval-Ranking System](./diagrams/retrieval-rank-facebook.png)
+![Facebook Retrieval-Ranking System](./diagrams/designs-retrieval-rank-co-facebook.png)
 
 ### Youtube Retrieval System
 
-![Youtube Retrieval System](./diagrams/retrieval-youtube.png)
+![Youtube Retrieval System](./diagrams/modules-model-rank-co-youtube.png)
 
 1. Input Embeddings
    1. Embedded Videos Watched
@@ -58,3 +58,14 @@
    1. Classifier
 3. Inference Network
    1. ANN Search (Approximate Nearest Neighbor)
+
+## Nvidia Retrieval-Filtering-Scoring-Ordering Systems
+
+![Nvidia Retrieval-Filtering-Scoring-Ordering Systems](./diagrams/designs-retrieval-rank-co-nvidia.png)
+
+### Special Features
+
+1. Filtering
+   1. Bloom Filter
+2. Ordering
+   1. Order by business order for better user experiences
