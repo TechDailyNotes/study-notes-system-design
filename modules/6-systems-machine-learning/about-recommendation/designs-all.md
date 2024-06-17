@@ -37,6 +37,9 @@
 1. Recall
    1. Spell Check
    2. Query Understanding (Query Processing) - QP Model
+      1. Query Augmentation (from query fragments to full query)
+      2. Query Interpretation
+      3. Query Planning (for guiding the MoE system)
    3. Query Expansion (Retrieval) - Retrieval Model
 2. Precision
    1. Ranking - Ranking Model
