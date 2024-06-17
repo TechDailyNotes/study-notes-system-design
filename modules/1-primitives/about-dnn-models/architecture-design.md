@@ -3,15 +3,17 @@
 ## Terminology
 
 1. In the context of DNN pipelines, we need to design
-   1. Data Representation
-   2. Model Architecture
-   3. Loss Function
+   1. Data
+   2. Embeddings Model
+   3. Task Model
+   4. Loss Function
 2. In the context of information embeddings, we need to design
-   1. Information structure
+   1. Information
    2. Embeddings
    3. Tasks
+   4. Metrics
 
-## Procedures
+## Thinking Procedures
 
 1. Divide the information structure horizontally
    1. Where does the information embedded?
@@ -32,3 +34,25 @@
 3. Design the tasks specific to the information structure
    1. Specific Tasks: classification, regression, clustering, generation, retrieval, rewrite, rank, etc.
    2. General Tasks: MLM, NSP, contrastive learning, CBOW, Skip-Gram etc.
+
+## Design Procedures
+
+1. Trade-off between different tasks.
+   1. Tasks should have actual meanings.
+   2. Tasks should be trainable (data source is available).
+2. Design the loss function to evaluate model's performance on the task.
+3. Data collection
+   1. Corpus centric
+      1. Collect from working systems
+      2. Collect from human labels
+      3. Active learning
+      4. Model generated data
+   2. Closed loop
+      1. Tools: Data analysis of human behaviors to quantify model-human interaction.
+      2. Categories
+         1. Positive evaluation
+            1. Evaluate how do people think about the results.
+         2. ${\epsilon}$ Greedy
+            1. Randomly replace the result with a low-probability result every ${\epsilon}$ time. Explore possibilities and pass the gradients back to the whole system.
+         3. ${\epsilon^2}$ Greedy
+            1. Randomly replace the result of some expert engine (ML model) in the MoE system with a low-probability result every ${\epsilon}$ time. Explore possibilities and pass the gradients back to the expert engine.
